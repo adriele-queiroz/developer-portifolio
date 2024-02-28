@@ -1,0 +1,308 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sarala', sans-serif;
+}
+
+body {
+    background-color: #151515;
+}
+
+/* Estilos do cabeçalho */
+.header {
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav__icon {
+    color: #fcfcfc;
+    margin: 10px 10px;
+}
+
+/* Estilos da seção "Sobre" */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+    text-align: center;
+    color: #fcfcfc;
+    padding: 0 20px;
+}
+
+.about__title,
+.contact__title {
+    font-size: 30px;
+    margin: 0 0 20px;
+}
+
+.about__title span,
+.contact span {
+    border-bottom: 5px solid #5FDDE5;
+}
+
+.about__text {
+    margin: 10px 0;
+}
+
+.contact {
+    color: #FFFFFF;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact:hover {
+    color: #b2b2b2;
+    transform: scale(1.1);
+    transition: all 0.6s;
+}
+
+.image-top {
+    border-radius: 50px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px
+    }
+}
+
+hr {
+    margin: 50px 20px;
+}
+
+/* Estilos da seção de linguagens */
+.linguages-box {
+    color: #ffffff;
+    text-align: left;
+}
+
+.linguages-box__item {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 10px 0;
+}
+
+.linguages-box__icon {
+    margin: 20px;
+    text-align: center;
+    color: #5FDDE5;
+}
+
+.linguages-box__text h3 {
+    font-size: 26px;
+}
+
+.linguages-box__text p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #b2b2b2;
+}
+
+/* Estilos da seção de projetos */
+.projects,
+.projects-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 40px;
+    align-items: center;
+}
+
+.projects h2 {
+    font-size: 30px;
+    color: #FFFFFf;
+    text-transform: uppercase;
+}
+
+.projects__img {
+    width: 80%;
+    height: auto;
+    margin: 0 20px;
+    order: 1;
+}
+
+.projects__text {
+    text-align: left;
+    margin: 20px 20px;
+}
+
+.projects__text h4 {
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.projects__text span {
+    color: #b2b2b2;
+    font-size: 14px;
+    margin: 5px;
+}
+
+/* Estilos do formulário de contato */
+.contact-form {
+    background-color: #2f2f2f;
+    padding: 75px 20px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    color: #FFFFFF
+}
+
+.contact-form p {
+    color: #b2b2b2;
+    font-size: 16px;
+    margin: 0 0 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 95%;
+    padding: 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+}
+
+.contact-form button {
+    background-color: transparent;
+    border: none;
+    border-bottom: 5px solid #5FDDE5;
+    float: right;
+    cursor: pointer;
+    margin: 14px;
+}
+
+/* Estilos do rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0 45px;
+    color: #ffffff;
+}
+
+/* Estilos para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    .image-top {
+        width: 70%;
+        height: auto;
+        margin: 30px 0px;
+    }
+}
+
+/* Estilos para telas maiores que 1024px */
+@media screen and (min-width: 1024px) {
+    .header,
+    .about,
+    .linguages-box,
+    .contact-container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        font-size: 14px;
+    }
+
+    .about {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about__box {
+        text-align: left;
+    }
+
+    .about__text p {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+    .about__title {
+        font-size: 47px;
+    }
+
+    .about__img {
+        width: 30%;
+        height: auto;
+    }
+
+    .nav {
+        font-size: 30px;
+    }
+
+    .contact {
+        font-size: 21px;
+    }
+
+    .linguages-box__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .projects__list {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .projects__img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .contact-container {
+        padding: 20px 20px;
+        display: flex;
+        justify-content: space-between;        
+        font-size: 30px;
+    }
+
+    .contact-form {
+        text-align: left;
+        padding: 20px 4dvh;
+    }
+
+    .contact-form h2 {
+        color: #FFFFFF;        
+        
+    }
+
+    .contact-form p {
+        color: #b2b2b2;
+        font-size: 20px;
+    }
+    .contact-form input{
+        font-size: 20px;
+    }
+
+    #message{
+        font-size: 20px;
+    }
+    .contact-form button {
+        cursor: pointer;
+        margin: 32px;
+    }
+
+    form {
+        width: 40%;
+    }
+}
